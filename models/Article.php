@@ -16,5 +16,13 @@ class Article {
         return $this->conn->query($sql);
     }
 
-    
+    public function getById($id) {
+        $sql = "SELECT * FROM article WHERE id = $id";
+        return $this->conn->query($sql);
+    }
+
+    public function store($data) {
+        $sql = "INSERT INTO article (titre, contenu, categorie) VALUES ('".$data['titre']."', '".$data['contenu']."', ".$data['categorie'].")";
+        $this->conn->query($sql);
+    }
 }

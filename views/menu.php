@@ -5,7 +5,7 @@
     <ul>
         <li><a href="index.php">Accueil</a></li>
        <?php foreach ($categories as $categorie) { ?>
-            <li><a href="fetchData.php?id=<?= $categorie['id'] ?>"><?= $categorie['libelle']?></a></li>
+            <li><a href="articles.php?id=<?= $categorie['id'] ?>"><?= $categorie['libelle']?></a></li>
         <?php } ?>
     </ul>
 </header>

@@ -11,6 +11,7 @@
     <h1 class="titre"><?= $libelle ?></h1>
     <div class="container">
         <?php
+            
             if ($articles->num_rows > 0) {
                 foreach ($articles as $article) { ?>
                     <div class="articles">
